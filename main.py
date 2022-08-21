@@ -47,7 +47,7 @@ def get_date():
     now =  time.localtime()
     now_time = time.strftime("%Y-%m-%d %H:%M:%S", now)
     # now_time = time.strftime("%Y-%m-%d ", now)
-    return now_time
+    return date
 
 
 client = WeChatClient(app_id, app_secret)
