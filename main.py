@@ -43,18 +43,11 @@ def get_words():
 def get_random_color():
   return "#%06x" % random.randint(0, 0xFFFFFF)
 
-def get_now_time():
-    """
-    获取当前日期时间
-    :return:当前日期时间
-    """
+def get_date():
     now =  time.localtime()
     now_time = time.strftime("%Y-%m-%d %H:%M:%S", now)
     # now_time = time.strftime("%Y-%m-%d ", now)
     return now_time
-if __name__ == '__main__':
-    now_time = get_now_time()
-    print(now_time)
 
 
 client = WeChatClient(app_id, app_secret)
